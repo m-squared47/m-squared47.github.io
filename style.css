@@ -38,7 +38,7 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #7c81ad;
+    background: #e5c3a6;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -58,10 +58,10 @@
     text-align: left;
 }
 .content h1{
-    color: #e5c3a6;
+    color: #2e4374;
 }
 .content p{
-    color: #7c81ad;
+    color: #4b527e;
 }
 .jumbotron{
     text-wrap: wrap;
@@ -86,16 +86,17 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #7c81ad;
+    border: 2px solid #e5c3a6;
     background: transparent;
     color: #ffffff;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 span{
-    background: #7c81ad;
+    background: #e5c3a6;
     width:0;
     height: 100%;
     border-radius: 25px;
@@ -110,4 +111,17 @@ button:hover span{
 }
 button:hover{
     border: none;
+    color: #000000;
+}
+.more_content{
+    background-color:#e5c3a6;
+    width: 100%;
+    transform: translateY(-35px);
+    padding: 35px;
+}
+.more_content h1{
+    color: #ffffff;
+}
+.more_content p{
+    color:#ffffff;
 }
