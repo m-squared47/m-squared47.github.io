@@ -1,7 +1,19 @@
 
+//Font
+$headings-font-family:        null !default;
 
+//Color Scheme
+$primary:           #ffffff;
+$secondary:         #b6b6b6;
+$light:             #ffffff;
+$light-bg-subtle:   #cfcfcf;
+$dark:              #000000;
+$dark-bg-subtle:    #555555;
 
 @import "../bootstrap/scss/bootstrap.scss";
+
+@font-face { font-family: ProtestStrike; src: url(../fonts/ProtestStrike-Regular.ttf);}
+@font-face { font-family: BebasNeue; src: url(../fonts/BebasNeue-Regular.ttf);}
 
 body {
     color: $primary;
@@ -9,20 +21,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: $primary;
+    font-family: BebasNeue;
 }
 
 p {
     color: $secondary;
 }
 
-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(7, 15, 43, 0.75)), url('../content/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.jumbotron {
-    background-color: rgba(255, 255, 255, 0.8);
+#jumbotron {
+    background-color: rgba(0, 0, 0, 0.5);
 }
