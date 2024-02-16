@@ -6,7 +6,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url(content/background.jpg);
+    background-image: linear-gradient(rgba(77, 76, 76, 0.75), rgba(0, 0, 0, 0.75)),url(content/background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -84,7 +84,6 @@ button{
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
-    border-radius: 25px;
     font-weight: bold;
     border: 2px solid #e5c3a6;
     background: transparent;
@@ -99,7 +98,6 @@ span{
     background: #e5c3a6;
     width:0;
     height: 100%;
-    border-radius: 25px;
     position: absolute;
     left: 0;
     bottom: 0;
