@@ -1,27 +1,134 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Martin Matsudaira Website Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="content/logo.ico">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="banner">
-            <div class="navbar">
-                <img src="content/logo.png" class="logo">
-                <ul>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Contact/Socials</li>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="sass/custom.css">
+
+    <script defer src="bootstrap/js/bootstrap.bundle.js"></script>
+
+    <title>Martin Matsudaira</title>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid ">
+          <img src="content/logo.ico" class="rounded float-start" style="width: 48px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">GitHub Repos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Hand/Face Tracker</a></li>
+                            <li><a class="dropdown-item" href="#">Tatos</a></li>
+                            <li><a class="dropdown-item" href="#">JS Game Engine</a></li>
+                            <li><a class="dropdown-item" href="#">JS Game and Physics Engine</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact/Social</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="container">
-            <div class="col"><h1>Col1</h1></div>
+    </nav>
+    <!--Page Jumbotron-->
+    <div class="container">
+        <div class="row align-items-center" style="height: 85vh">
+            <div class="col-9 d-flex align-items-center mx-auto">
+                <div class="container position-static">
+                    <img src="content/front_shot.jpg" class="img-fluid float-end border border-5 border-primary mb-3 ms-3" alt="Martin Front Shot">
+                    <div>
+                        <h1>Hello! <br>I'm Martin, <br>Software Engineer</h1>
+                        <p>I am a passionate Software Engineer with a strong desire to contribute innovative solutions through creative thinking, advanced problem-solving abilities, and logical acumen. Seeking an engaging Software Engineering role where I can apply my skills to develop cutting-edge software and contribute to meaningful projects.</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary" href="#" role="button">Contact</a>
+                        <a class="btn btn-primary" href="#" role="button">Projects</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
-    <tail>
+    </div>
+    <!--Content after jumbotron-->
+    <div class="container-fluid bg-light-subtle pb-5">
+        <div class="row border-bottom border-3 border-light">
+            <div class="col text-center p-3">
+                <h1>Learn More</h1>
+            </div>
+        </div>
+        <div class="row text-center p-2">
+            <div class="col-4 mx-auto">
+                <h1>Who am I?</h1>
+                <p>
+                    Clovis born, Pewaukee raised, and Renton living,
+                    I am a University of Washington - Bothell graduate with a BA of Science - Computer Science & Software Engineering.
+                </p>
+                <p>
+                    I enjoy creating software and working on various projects to expand my knowledge and skillset. Over the last few years, I 
+                    worked on projects involving graphics, game engines, and web applications.
+                </p>
+                <a class="btn btn-primary" href="#" role="button">About Me</a>
+            </div>
+            <div class="col-4 mx-auto">
+                <h1>What do I do?</h1>
+                <p>
+                    I program in many various languages such as Python, C++, C#, Java, JavaSpript, and more. Some of my previous projects include a
+                    hand and face tracking app using Python and machine learning, Tatos; a horror/thriller collecting game using Unity and C#, a JavaScript
+                    web based game engine, and a modified version including a physics engine module.
+                </p>
+                <a class="btn btn-primary" href="#" role="button">Projects</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mx-auto pt-5">
+        <div class="row justify-content-center">
+            <div class="col-3 text-center">
+                <h2><em>Wealth consists not in having great possessions, but in having few wants.</em></h2>
+                <h3><em>-Epictetus</em></h3>
+            </div>
+            <div class="col-3 text-center">
+                <img src="https://t3.ftcdn.net/jpg/06/13/25/64/360_F_613256408_zOHRdPyVvZ3ZFtVxRpHhIM0D3gKp0XSK.jpg" style="height: 30vh">
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-1">
+                    <a href="#" class="text-light text-decoration-none"><i class="bi bi-house-door"></i> Home</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-light text-decoration-none"><i class="bi bi-person"></i> About</a>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center">
+                    <img src="content/logo.ico" class="rounded float-start" style="width: 32px">
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-light text-decoration-none"><i class="bi bi-clipboard-data"></i> Projects</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-light text-decoration-none"><i class="bi bi-envelope"></i> Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
 
-    </tail>
 </html>

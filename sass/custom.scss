@@ -1,0 +1,28 @@
+
+
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+body {
+    color: $primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary;
+}
+
+p {
+    color: $secondary;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(7, 15, 43, 0.75)), url('../content/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0.8);
+}

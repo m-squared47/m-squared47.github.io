@@ -1,2 +1,2 @@
-# m-squared.githum.io
+# m-squared.github.io
 ## A custom website portfolio using Bootstrap
